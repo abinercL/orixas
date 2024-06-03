@@ -4,8 +4,11 @@ import (
 	"fmt"
 )
 
+var dia, mes, ano int
+
+// 1°parte
 func main() {
-	var dia, mes, ano int
+
 	fmt.Print("Coloque sua Data de nascimento: ")
 	fmt.Scan(&dia, &mes, &ano) // lê cada uma das variaveis juntas
 	//chama a função somaDigitos para cada uma das variaveis
@@ -21,7 +24,6 @@ func main() {
 	fmt.Println("valor total é: ", total)
 
 }
-
 func SomaDigitos(numero int) int {
 	soma := 0
 	for numero > 0 {
@@ -30,3 +32,11 @@ func SomaDigitos(numero int) int {
 	}
 	return soma
 }
+
+//2°parte
+// Pegar os dados iniciais do input e numerar os caracteres em posiçoes de 1 a 8
+//func Impares_pares() {
+
+//}
+
+//apos isso somar somente os numeros impar e depois os numeros pares de acordo com cada posição
